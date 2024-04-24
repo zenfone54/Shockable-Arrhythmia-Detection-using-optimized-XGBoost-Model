@@ -1,2 +1,2 @@
 # Shockable-Arrhythmia-Detection-using-optimized-XGBoost-Model
-This repository provides MATLAB code for preprocessing the ECG signal of CUDB, VFDB datasets and extract features from them. This also contains Python codes for comparing the performance of different Machine learning models and optimizing the XGBoost model.
+This repository hosts MATLAB scripts for preprocessing ECG signals from the CUDB and VFDB datasets, as well as feature extraction. Additionally, it includes Python code for evaluating the performance of various machine learning models and optimizing the XGBoost model.
