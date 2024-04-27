@@ -1,0 +1,42 @@
+<!--#set var="TITLE" value="Annotations in the VFDB"-->
+<!--#include virtual="/head.shtml"-->
+
+<h2>Annotations in the MIT-BIH Malignant Ventricular Fibrillation Database</h2>
+
+<p>
+All of the annotations contained in the <tt>.atr</tt> files of
+this database are rhythm change annotations, and almost all of them
+mark changes in cardiac rhythm (a few indicate episodes of noise or
+asystole).  The table below indicates
+how the <tt>aux</tt> strings of these annotations should be
+interpreted.
+
+<center>
+<table width="50%" bgcolor="lightblue" cellpadding=5>
+<tr><th><tt>aux</tt> string</th><th>Meaning</th></tr>
+<tr><td align="center">(AFIB</td><td align="center">atrial fibrillation</td></tr>
+<tr><td align="center">(ASYS</td><td align="center">asystole</td></tr>
+<tr><td align="center">(B</td><td align="center">ventricular bigeminy</td></tr>
+<tr><td align="center">(BI</td><td align="center">first degree heart block</td></tr>
+<tr><td align="center">(HGEA</td><td align="center">high grade ventricular ectopic activity</td></tr>
+<tr><td align="center">(N <i>or</i> (NSR</td><td align="center">normal sinus rhythm</td></tr>
+<tr><td align="center">(NOD</td><td align="center">nodal ("AV junctional") rhythm</td></tr>
+<tr><td align="center">(NOISE</td><td align="center">noise</td></tr>
+<tr><td align="center">(PM</td><td align="center">pacemaker (paced rhythm)</td></tr>
+<tr><td align="center">(SBR</td><td align="center">sinus bradycardia</td></tr>
+<tr><td align="center">(SVTA</td><td align="center">supraventricular tachyarrhythmia</td></tr>
+<tr><td align="center">(VER</td><td align="center">ventricular escape rhythm</td></tr>
+<tr><td align="center">(VF <i>or</i> (VFIB</td><td align="center">ventricular fibrillation</td></tr>
+<tr><td align="center">(VFL</td><td align="center">ventricular flutter</td></tr>
+<tr><td align="center">(VT</td><td align="center">ventricular tachycardia</td></tr>
+</table>
+</center>
+
+<p> In each case, the rhythm change annotations are placed at the
+<i>beginning</i> of the episode of the indicated rhythm.  The
+previous rhythm continues during episodes marked by (NOISE;  the
+noise ends at the time of the next annotation.
+
+<!--#include virtual="/footer.shtml"-->
+</body>
+</html>
